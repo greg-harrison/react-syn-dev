@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
+import FunctionalButton from '../../basic_components/functional_button'
+import ClassButton from '../../basic_components/class_button'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <FunctionalButton title="Functional" action={() => { console.log('test funct') }} />
+        <ClassButton title="Class" action={() => { console.log('test class') }} />
       </div>
     );
   }
