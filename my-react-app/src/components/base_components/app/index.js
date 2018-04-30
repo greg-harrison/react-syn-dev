@@ -5,9 +5,20 @@ import HorizontalSplit from '../../layout_components/horizontalSplit'
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      date: Date.now()
+    }
+  }
+  componentDidMount() { }
+  componentWillReceiveProps() { }
+  shouldComponentUpdate() { }
+  componentDidUpdate() { }
   render() {
     return (
       <div className="App">
+        <div>{this.state.date}</div>
         <HorizontalSplit
           leftSide={
             <FunctionalButton title="Functional" action={() => { console.log('test funct') }} />

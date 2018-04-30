@@ -10,7 +10,7 @@ const FunctionalButton = ({ title, action }) => (
   </div>
 )
 
-FunctionButton.propTypes = {
+FunctionalButton.propTypes = {
   title: PropTypes.string.isRequired,
   action: PropTypes.func
 }
